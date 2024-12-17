@@ -6,15 +6,17 @@ const InfoSeguros = () => {
     <div className="info-seguro">
       <header className="header">
         <div className="nav-bar">
-          <img src="public/logo1.png" alt="Logo" className="logo" />
           <nav className="nav">
             <ul>
-              <img src="/person.png" alt="Persona" />
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#contenedor-logo">Información</a></li>
+              <li><a href="#seguro-nosotros">Elige tu seguro con nosotros</a></li>
+              <li><a href="#seguro-todo-riesgo">Cómo elegir un seguro todo riesgo</a></li>
             </ul>
           </nav>
         </div>
 
-        <div className="banner">
+        <div id="inicio" className="banner">
           <div className="banner-text">
             <h1>Seguro Todo Riesgo</h1>
             <p>
@@ -37,8 +39,7 @@ const InfoSeguros = () => {
         </div>
       </header>
 
-      <div className="info-seguro-vehiculo">
-        <div className="contenedor-logo"></div>
+      <div id="contenedor-logo" className="info-seguro-vehiculo">
         <h2>Información Seguros Vehículos</h2>
         <ul>
           <li>El seguro de vehículos es una cobertura que protege tu automóvil ante accidentes, robos y otros imprevistos.</li>
@@ -46,28 +47,69 @@ const InfoSeguros = () => {
           <li>Con este simulador, podrás obtener una estimación del costo de tu seguro según el tipo de cobertura y las características de tu vehículo.</li>
         </ul>
       </div>
-      <div className='tittle'><h1>¿Por qué elegir tu seguro con nosotros?</h1></div>
+
+      <div id="seguro-nosotros" className="tittle">
+        <h1>¿Por qué elegir tu seguro con nosotros?</h1>
+      </div>
+
+      <div className="info-seguro-nosotros">
+        <div className="info-item">
+          <img src="/fondos.png" alt="Financiación" />
+          <h3>Financia hasta en 12 cuotas</h3>
+          <p>Distribuye el pago de tu seguro en cuotas mensuales que se adapten a tu presupuesto y garantiza la protección de tu vehículo.</p>
+        </div>
+        <div className="info-item">
+          <img src="/pique.png" alt="Cotización rápida" />
+          <h3>Cotiza en menos de 2 minutos</h3>
+          <p>Obtén tu cotización en minutos y asegura tu auto con una cobertura completa, sin trámites ni complicaciones.</p>
+        </div>
+        <div className="info-item">
+          <img src="/cancelacion.png" alt="Cancelación gratuita" />
+          <h3>Cancelación gratuita</h3>
+          <p>Podrás cancelar tu seguro en cualquier momento, pagando solo por el tiempo que hayas estado cubierto.</p>
+        </div>
+      </div>
       
-      <div class="info-seguro-nosotros">
-  <div class="info-item">
-    <img src="/fondos.png" alt="Financiación" />
-    <h3>Financia hasta en 12 cuotas</h3>
-    <p>Distribuye el pago de tu seguro en cuotas mensuales que se adapten a tu presupuesto y garantiza la protección de tu vehículo.</p>
-  </div>
-  <div class="info-item">
-    <img src="/pique.png" alt="Cotización rápida" />
-    <h3>Cotiza en menos de 2 minutos</h3>
-    <p>Obtén tu cotización en minutos y asegura tu auto con una cobertura completa, sin trámites ni complicaciones.</p>
-  </div>
-  <div class="info-item">
-    <img src="/cancelacion.png" alt="Cancelación gratuita" />
-    <h3>Cancelación gratuita</h3>
-    <p>Podrás cancelar tu seguro en cualquier momento, pagando solo por el tiempo que hayas estado cubierto.</p>
-  </div>
-</div>
-<a className='button12'  href="/cotizar">
-    <button className="button2"><b>Cotizar</b></button>
-     </a>
+      <a className="button12" href="/cotizar">
+        <button className="button2"><b>Cotizar</b></button>
+      </a>
+
+      <div id="seguro-todo-riesgo" className="contenedor">
+        <div className="encabezado">
+          <h1>¿Cómo elegir un Seguro Todo Riesgo?</h1>
+          <p>Aprende cómo funciona un seguro para carros y sus coberturas más importantes.</p>
+        </div>
+
+        <div className="coberturas">
+          <div className="cobertura-elemento">
+            <h2>Daños a terceros</h2>
+            <p>
+              Actúa cuando quien provoca el siniestro eres tú. Hay tres opciones dentro de esta cobertura:
+              por los daños emergentes, asociados a lo material y a lesiones o fallecimiento de alguna persona. 
+              Los morales, que aplican cuando el tercero sufre daños psicológicos. Y por último, por el lucro cesante, 
+              que se acciona en caso que la persona pierda su herramienta de trabajo producto del accidente y no pueda generar ingresos.
+            </p>
+          </div>
+          <div className="cobertura-elemento">
+            <h2>Pérdida total</h2>
+            <p>
+              Esta cobertura aplica cuando el daño del vehículo supera el 75% de su valor comercial.
+            </p>
+          </div>
+          <div className="cobertura-elemento">
+            <h2>Pérdida parcial</h2>
+            <p>
+              Cobertura para reparaciones menores cuyo costo es inferior al valor total del vehículo.
+            </p>
+          </div>
+          <div className="cobertura-elemento">
+            <h2>Grúa</h2>
+            <p>
+              Servicio de asistencia en carretera para remolcar tu vehículo en caso de siniestro o avería.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

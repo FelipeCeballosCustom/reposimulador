@@ -1,8 +1,9 @@
+
+
 body {
   font-family: 'Poppins', sans-serif; /* Fuente homogénea para todo el contenido */
-  color: #333;
   line-height: 1.6;
-  /* background-color: #f4f4f4; */
+  background-color: #fff;
 }
 .info-seguro {
     margin: 0;
@@ -12,10 +13,10 @@ body {
   .nav-bar {
     display: flex;
   justify-content: space-between;
-  align-items: center; /* Centra verticalmente el logo */
+  align-items: center; 
   padding: 20px;
   background-color: rgb(244, 244, 244);
-  height: 20px; /* Fija la altura de la barra de navegación */
+  height: 20px; 
   }
   
   .nav ul {
@@ -41,7 +42,7 @@ body {
     width: auto;
   }
   
-  /* Estilos del header */
+
   .header {
     position: relative;
     text-align: left;
@@ -54,8 +55,7 @@ body {
   *{
     box-sizing: border-box;
   }
-  
-  /* Estilos del banner */
+
   .banner {
     display: flex;
     justify-content: space-between;
@@ -91,8 +91,7 @@ body {
     line-height: 1.6;
     margin-top: -10px;
   }
-  
-  /* Estilos del botón */
+
   .button {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ffe600;
@@ -108,7 +107,7 @@ body {
     background-color: #9e9e9e;
   }
   
-  /* Estilos de la imagen del banner */
+
   .banner-image {
    margin-top: -80px;
   }
@@ -143,6 +142,7 @@ body {
     justify-content: center;
     font-size: 2rem;
     line-height: 1.25;
+    margin-top: 40px;
   }
 
   .info-seguro-vehiculo p{
@@ -166,6 +166,7 @@ body {
 
   .tittle{
     text-align: center;
+    margin-top: 230px;
   }
   
   .info-seguro-nosotros {
@@ -180,7 +181,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centra verticalmente */
+    justify-content: center; 
     max-width: 300px;
   }
   
@@ -208,7 +209,7 @@ body {
     justify-content: center;
     align-items: center; /* Centrado vertical y horizontal */
     width: 100%;
-    margin-top: 10px;
+    margin-top: -40px;
   }  
   .button2 {
     font-family: Arial, Helvetica, sans-serif;
@@ -224,3 +225,86 @@ body {
     background-color: #555658;
   }
   
+  .contenedor {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 130px;
+}
+
+.encabezado {
+    padding: 20px;
+    background-color: rgb(5, 40, 77);
+    color: white;
+    text-align: center;
+}
+
+.encabezado h1 {
+    margin: 0 0 10px;
+    color: #fff;
+}
+
+.encabezado p {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+
+.coberturas {
+    padding: 20px;
+}
+
+.cobertura-elemento {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.cobertura-elemento:last-child {
+    border-bottom: none;
+}
+
+.cobertura-elemento h2 {
+    font-size: 1.6rem;
+    color: rgb(5, 40, 77);
+    margin-bottom: 5px;
+}
+
+.cobertura-elemento p {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+
+
+.info-seguro-nosotros, 
+.contenedor, 
+.header, 
+.banner {
+ 
+  margin-bottom: 60px; 
+}
+
+
+.info-seguro-nosotros h1,
+.encabezado h1 {
+  margin-bottom: 20px; 
+}
+
+ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#inicio, #contenedor-logo, #seguro-nosotros, #seguro-todo-riesgo {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+nav ul li a {
+  margin-right: 50px; 
+  text-decoration: none;
+}

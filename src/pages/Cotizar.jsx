@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Importamos useNavigate
 import { vehiculosDB, calcularPrecioPoliza } from '../data/VehiculosDB';
 import './Cotizar.css';
 
@@ -14,6 +15,8 @@ const Cotizar = () => {
     direccion: '',
     fechaNacimiento: ''
   });
+
+  const navigate = useNavigate(); // Usamos el hook useNavigate
 
   const handleSearch = () => {
     const vehiculoEncontrado = vehiculosDB.find((v) => v.placa === placa);
@@ -31,9 +34,9 @@ const Cotizar = () => {
     setComprador({ ...comprador, [name]: value });
   };
 
-  const handleCompra = (e) => {
+  const handleLoginRedirect = (e) => {
     e.preventDefault();
-    alert('¡Compra realizada con éxito!');
+    navigate('/login'); // Redirige al login
   };
 
   return (
@@ -65,7 +68,7 @@ const Cotizar = () => {
       {vehiculo && (
         <div>
           <h3>Datos del Comprador</h3>
-          <form className="buyer-form" onSubmit={handleCompra}>
+          <form className="buyer-form" onSubmit={handleLoginRedirect}>
             <div className="form-group">
               <label>Nombre:</label>
               <input
@@ -128,7 +131,7 @@ const Cotizar = () => {
             </div>
 
             <button type="submit" className="submit-button">
-              Comprar póliza
+              Iniciar Sesión
             </button>
           </form>
         </div>
