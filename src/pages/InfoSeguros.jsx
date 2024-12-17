@@ -27,7 +27,7 @@ const InfoSeguros = () => {
           </div>
 
           <div className="banner-image">
-            <img src="/image.png" alt="Restaurante" />
+            <img src="/carro.png" alt="carro" />
             <ul className="banner-list">
               <li>Cotiza en menos de 3 minutos</li>
               <li>Financiación en 12 cuotas</li>
