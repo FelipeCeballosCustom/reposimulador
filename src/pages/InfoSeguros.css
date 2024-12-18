@@ -308,3 +308,127 @@ nav ul li a {
   margin-right: 50px; 
   text-decoration: none;
 }
+
+/* Pantallas para tablets */
+@media (max-width: 1024px) {
+  .banner {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .banner-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-text p {
+    font-size: 1.4rem;
+  }
+
+  .banner-image img {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .button {
+    padding: 12px 80px;
+  }
+
+  .info-seguro-nosotros {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .info-item {
+    max-width: 250px;
+  }
+
+  .contenedor {
+    margin: 10px;
+  }
+
+  .cobertura-elemento h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Pantallas para móviles */
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .banner {
+    flex-direction: column;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+
+  .banner-text p {
+    font-size: 1.2rem;
+  }
+
+  .banner-image img {
+    width: 250px;
+    margin: 10px 0;
+  }
+
+  .button, .button2 {
+    padding: 10px 50px;
+    font-size: 1rem;
+  }
+
+  .banner-list li {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
+  .info-seguro-vehiculo h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-seguro-vehiculo ul {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .info-seguro-nosotros {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-item {
+    max-width: 100%;
+  }
+
+  .info-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .contenedor {
+    margin: 10px;
+  }
+
+  .encabezado h1 {
+    font-size: 1.5rem;
+  }
+
+  .encabezado p, .cobertura-elemento p {
+    font-size: 1rem;
+  }
+}
