@@ -1,5 +1,6 @@
-import React from 'react';
+
 import './InfoSeguros.css'; // Asegúrate de que el archivo CSS esté presente.
+import { Link } from 'react-router-dom';
 
 const InfoSeguros = () => {
   return (
@@ -12,6 +13,10 @@ const InfoSeguros = () => {
               <li><a href="#contenedor-logo">Información</a></li>
               <li><a href="#seguro-nosotros">Elige tu seguro con nosotros</a></li>
               <li><a href="#seguro-todo-riesgo">Cómo elegir un seguro todo riesgo</a></li>
+              <li>
+              <Link to="/login">Ingresa</Link>
+              </li>
+
             </ul>
           </nav>
         </div>

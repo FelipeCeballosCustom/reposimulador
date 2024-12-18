@@ -1,111 +1,79 @@
-
-* {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    line-height: 1.6;
-  }
-
 .cotizacion-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  .cotizacion-container h2 {
-    color: rgb(5, 40, 77);
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .cotizacion-container h3 {
-    color: rgb(5, 40, 77);
-    font-size: 1.5rem;
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
-  
+h2 {
+  color: #05284d;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  .search-section {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 30px;
-    justify-content: center;
-  }
-  
-  .search-section input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 250px;
-    font-size: 16px;
-  }
-  
-  .search-section button {
-    padding: 10px 20px;
-    background-color: #ffe600;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-  }
-  
-  .search-section button:hover {
-    background-color: #9e9e9e;
-  }
-  .vehicle-details {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-  }
-  .vehicle-details p {
-    color: black;
-    margin: 10px 0;
-    font-size: 16px;
-  }
-  .buyer-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
-  .form-group label {
-    font-weight: bold;
-    color: rgb(5, 40, 77);
-  }
-  
-  .form-group input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  .submit-button {
-    background-color: #ffe600;
-    color: rgb(0, 0, 0);
-    padding: 15px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
-    width: 100%;
-    max-width: 400px;
-    align-self: center;
-  }
-  .submit-button:hover {
-    background-color: #555658;
-  }
-  .error-message {
-    color: #ff0000;
-    font-size: 14px;
-    margin-top: 5px;
-  }
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.section {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+h3 {
+  color: #05284d;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #05284d;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #ffe600;
+  color: black;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  width: 50%;
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: #555658;
+  color: white;
+}
+
+.resultado {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.resultado h3 {
+  color: #05284d;
+}
+
+.resultado p {
+  font-size: 1.5rem;
+  color: black;
+}

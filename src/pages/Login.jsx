@@ -1,8 +1,8 @@
-import React from "react";
-import './Login.css';
 
+import './Login.css';
 const Login = () => {
     return (
+        <div id='login'>
         <div className="container">
             <div className="login-box">
                 <h2>Iniciar Sesión</h2>
@@ -28,6 +28,7 @@ const Login = () => {
             {[...Array(50)].map((_, i) => (
                 <span key={i} style={{ '--i': i }}></span>
             ))}
+        </div>
         </div>
     );
 };

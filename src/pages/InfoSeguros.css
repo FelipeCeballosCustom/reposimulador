@@ -12,11 +12,12 @@ body {
     
   .nav-bar {
     display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center; 
   padding: 20px;
   background-color: rgb(244, 244, 244);
   height: 20px; 
+  border-radius: 15px;
   }
   
   .nav ul {
