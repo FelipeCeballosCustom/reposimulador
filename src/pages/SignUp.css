@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.76);
+    overflow: hidden;
+} */
+
+.contenedores {
+    position: relative;
+    width: 600px;  /* Tamaño del círculo grande */
+    height: 600px; /* Tamaño del círculo grande */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.circulo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(5, 40, 77);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+}
+
+.cuadroLogin {
+    position: relative;
+    width: 70%; /* Ajustamos el tamaño del formulario dentro del círculo */
+    padding: 30px;
+    background: rgb(255, 255, 255);
+    border-radius: 25px; /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.campoInput {
+    position: relative;
+    margin: 15px 0;
+}
+
+.campoInput input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #000000;
+    outline: none;
+    border-radius: 40px;
+    color: #000000;
+    padding: 0 20px;
+}
+
+.campoInput label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #000000;
+    pointer-events: none;
+    transition: 0.5s ease;
+}
+
+.enlaceOlvido {
+    margin: 10px 0;
+}
+
+.enlaceOlvido a {
+    font-size: 0.9em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.enlaceOlvido a:hover {
+    text-decoration: underline;
+}
+
+.boton {
+    width: 100%;
+    height: 45px;
+    background: #ffe600;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #1f293a;
+    font-weight: 600;
+}

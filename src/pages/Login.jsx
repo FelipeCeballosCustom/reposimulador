@@ -5,7 +5,7 @@ const Login = () => {
     return (
         <div className="container">
             <div className="login-box">
-                <h2>Iniciar Sesión </h2>
+                <h2>Iniciar Sesión</h2>
                 <form action="#">
                     <div className="input-box">
                         <input type="email" required />
@@ -16,7 +16,10 @@ const Login = () => {
                         <label>Contraseña</label>
                     </div>
                     <div className="forgot-pss">
-                        <a href="#">¿Olvidaste tu contraseñna?</a>
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <div className="forgot-pss">
+                        <a href="/signup">Crear cuenta</a> {/* Redirige a la ruta signup */}
                     </div>
                     <button type="submit" className="btn">Iniciar Sesión</button>
                 </form>
